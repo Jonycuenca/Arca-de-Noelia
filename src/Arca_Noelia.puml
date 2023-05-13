@@ -1,5 +1,32 @@
 @startuml
-
-
-
+class Animal{}
+class Ballena{
+nombre: Moby Dick
+medio: nadadora
+}
+class Perro1{
+nombre: Cain
+carácter: fiero
+medio: caminante
+Dice ("Grrr")
+}
+class Perro2{
+nombre: Abel
+carácter: manso
+medio: caminante
+Dice ("Guau")
+}
+class Pingüino{
+nombre: Skiper
+medio: nadador
+}
+class Loro{
+medio: volador
+Dice ("Lorito bonito",\n "Pretty Polly" , "Viva mi dueño")
+}
+Animal <|-- Ballena
+Animal <|-- Perro1
+Animal <|-- Perro2
+Animal <|-- Pingüino
+Animal <|-- Loro
 @enduml
